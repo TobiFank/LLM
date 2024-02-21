@@ -45,7 +45,6 @@ def generate_text():
     chat.append(input)
 
     global pipe
-    global tokenizer
     pipe(chat, max_length=2048, do_sample=True, temperature=0.7)
 
     print(chat)
